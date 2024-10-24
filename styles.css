@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: "Noto Serif";
+  }
+
+  h2 {
+    font-family: "Noto Serif";
+    font-size: 1.5em;
+  }
+
+  body {
+    font-family: "Afacad Flux";
+    color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('Buildbruh.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  #call {
+    text-decoration: underline;
+    color: black;
+  }
+
+  #call:hover {
+    opacity: 0.5;
+  }
+
+  #call_to_act {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(252, 199, 20);
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Afacad Flux";
+    font-weight: 700;
+    transition: 0.52s;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  #call_to_act:hover {
+    box-shadow: 0 0 20px rgb(252, 199, 20);
+  }
+
+  #call_to_act:active {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+    border: 1px solid rgb(252, 199, 20);
+    border-radius: 10px;
+    background-color:white;
+  }
+  
+  .menu a {
+    background-color: white;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+    font-family: "Afacad Flux";
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .navi {
+    transition: 0.25s;
+  }
+
+  .navi:hover, .navi:active {
+    background-color:rgb(252, 198, 20);
+    box-shadow: 0 0 10px rgb(252, 199, 20);
+  }
+
+  .navi:active {
+    opacity: 0.2;
+    box-shadow: none;
+  }
+
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    color: black;
+  }
+
+  hr {
+    margin-top: 0;
+    padding: 0; 
+    margin-bottom: 20px; 
+    width: 300px; 
+    height: 4px; 
+    background-color: white; 
+    border-radius: 10px; 
+    border: none;
+  }
+
+  .right {
+    background: linear-gradient(135Deg, rgb(252, 199, 20), rgb(255, 230, 0));
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
