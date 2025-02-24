@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <title>Joy|Home</title>
+    <meta name="keywords" content="property, joy, management">
+    <meta name="author" content="JPM">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy | Contacts</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,127 +12,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style type="text/css">
-        body {
-            font-family: 'Afacad Flux', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .header {
-            background: linear-gradient(135deg, rgb(252, 199, 20), rgb(255, 230, 0));
-            padding: 15px;
-            text-align: center;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-
-        #logo {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .list {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 1em;
-            transition: background-color 0.3s;
-        }
-
-        .list:hover, .list:active {
-            background-color: rgb(252, 199, 20);
-            color: black;
-        }
-
-        .list:active {
-            opacity: 0.8;
-        }
-
-        .nav-bar {
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
-            border: 1px solid rgb(252, 199, 20);
-            justify-content: center;
-            gap: 10px;
-            font-size: 1em;
-            border-radius: 10px;
-        }
-
-        .content-box {
-            background-color: white;
-            padding: 1.5em;
-            margin-top: 20px;
-            width: 80%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .nav-bar {
-                width: 90%;
-                font-size: 0.9em;
-            }
-
-            .content-box {
-                width: 90%;
-                padding: 1em;
-            }
-
-            h1 {
-                font-size: 1.5em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.2em;
-            }
-
-            .list {
-                font-size: 0.9em;
-                padding: 8px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <a href="index.html"><img id="logo" src="./joy_other_other_logo.png" alt="Joy Property Management Company Logo"></a>  
-        <h1>Hassle-Free Property</h1>
-        <p>Let us help you <strong><a id="call" href="Contacts.html">make the most of your property today.</a></strong></p>
+  </head>
+  <body>
+    <div style="background: linear-gradient(135Deg, rgb(252, 199, 20), rgb(255, 230, 0)); padding:15px;text-align:center; margin-bottom: 10px; border-radius: 10px;">
+      <a href="index.html"><img id="logo" src="./joy_other_other_logo.png" alt="Joy Property Management Company Logo"></a>  
+      <h1>Hassle-Free Property</h1>
+      <p>Let us help you <strong><a id="call" href="Contacts.html">make the most of your property today.</a></strong></p>
     </div>
     <hr>
-    <div>
-        <div class="nav-bar">
-          <a class="list" href="index.html">Home</a>
-          <a class="list" href="About.html">About</a>
-          <a class="list" href="Services.html">Services</a>
-          <a class="list" href="Contacts.html">Contacts</a>
-        </div>
-        <div class="content-box">
-            <h2 style="color: black; text-align: center;">Our Contacts</h2>
-            <address style="font-size: 1rem">
-            <h2 style="text-align: left">Phone</h2>
-            <ul>
-                <li>+251 96 316 7749 - For Desalegn Abraham;
-                <li>+251 91 044 0252 - For Otfried Schellhas;
-            <ul>
-            <h2 style="text-align: left">E-mail</h2>
-            <ul>
-                <li><a style="color: black; text-decoration: under;" href="mailto:joypropertyplc@gmail.com" target="_blank">joypropertyplc@gmail.com</a>
-            <ul>
-        </address>
-        <h2 style="color: rgb(252, 124, 20); text-align: center; font-size: 1rem">Please Feel Free To Contact Us For the Best Solution To Your Particular Situation</h2>
-        <footer style="text-align: center; font-size: 15px; opacity: 0.7">Phone numbers are registered in Addis Ababa, Ethiopia</footer>
-        </div>
+    <div style="overflow:auto">
+      <div class="menu">
+        <a class="navi" href="index.html">Home</a>
+        <a class="navi" href="About.html">About</a>
+        <a class="navi" href="Services.html">Services</a>
+        <a class="navi" href="Contacts.html">Contacts</a>
+      </div>
+
+      <div class="main">
+        <h2 style="color: white; font-size: 2rem; text-align: center;">Why choose us?</h2>
+        <p style="color: white; font-size: 1.5rem; text-align: center; margin: auto;"><em>Proven Management Expertise <br> Extensive International Experience <br>Flexible Services to suit your Needs</em></li></p>
+        <h2 style="color: white; text-align: center; font-size: 2rem;">What we do</h2>
+        <ul style="margin: auto; text-align: center"><li style="color: white; margin: auto; text-align: center; list-style-type: none; font-size: 1.5rem;">Servicing your property <li style="color: white; list-style-type: none; font-size: 1.5rem;">Maximizing profit of your precious asset <li style="color: white; list-style-type: none; font-size: 1.5rem;">Eliminating the hassle of property ownership</ul>
+        <a style="text-decoration: none; color: black" href="Contacts.html"><button id="call_to_act">CONTACT US NOW</button></a>
+      </div>
+
+      <div class="right">
+        <h2>Testimonials</h2>
+        <img width="70px" height="70px" src="empty.png" alt="under construction">
+        <p>[Unavaialable]</p>
+      </div>
     </div>
-</body>
+
+    <div style="background: linear-gradient(135Deg, rgb(252, 199, 20), rgb(255, 230, 0));text-align:center;padding:10px;margin-top:7px; border-radius: 10px">&copy; joypropertymgt.com 2024</div>
+  </body>
 </html>
