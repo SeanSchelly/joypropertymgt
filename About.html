@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy|About</title>
+    <title>Joy | About</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,36 +12,126 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style type="text/css">
-        a:hover, a:active {
+        body {
+            font-family: 'Afacad Flux', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background: linear-gradient(135deg, rgb(252, 199, 20), rgb(255, 230, 0));
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        #logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .list {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .list:hover, .list:active {
             background-color: rgb(252, 199, 20);
             color: black;
         }
-        a:active {
-            opacity: 0.2;
+
+        .list:active {
+            opacity: 0.8;
+        }
+
+        .nav-bar {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            border: 1px solid rgb(252, 199, 20);
+            justify-content: center;
+            gap: 10px;
+            font-size: 1em;
+            border-radius: 10px;
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 1.5em;
+            margin-top: 20px;
+            width: 80%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .nav-bar {
+                width: 90%;
+                font-size: 0.9em;
+            }
+
+            .content-box {
+                width: 90%;
+                padding: 1em;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            .list {
+                font-size: 0.9em;
+                padding: 8px;
+            }
         }
     </style>
 </head>
 <body>
-    <div style="background: linear-gradient(135Deg, rgb(252, 199, 20), rgb(255, 230, 0)); padding:15px;text-align:center; margin-bottom: 10px; border-radius: 10px;">
-        <a href="index.htm"><img id="logo" src="joy other other logo.png" alt="Joy Property Management Company Logo"></a>  
-        <h1>Minding Your Properties.</h1>
-        <p>Let us help you <strong><a id="call" href="Contacts.htm">make the most of your property today.</a></strong></p>
-      </div>
-      <hr>
-      <div>
-        <div style="margin: auto; display: flex; flex-wrap: wrap; width: 80%; border: 1px solid rgb(252, 199, 20); justify-content: center; gap: 10px; font-size: 1.5em; border-radius: 10px; background-color: none;">
-          <a style="color: white; text-decoration: none;" href="index.html">Home</a>
-          <a style="color: white; text-decoration: none;" href="About.html">About</a>
-          <a style="color: white; text-decoration: none;" href="Services.html">Services</a>
-          <a style="color: white; text-decoration: none;" href="Contacts.html">Contacts</a>
+    <div class="header">
+        <a href="index.html"><img id="logo" src="./joy_other_other_logo.png" alt="Joy Property Management Company Logo"></a>  
+        <h1>Hassle-Free Property</h1>
+        <p>Let us help you <strong><a id="call" href="Contacts.html">make the most of your property today.</a></strong></p>
+    </div>
+    <hr>
+    <div>
+        <div class="nav-bar">
+          <a class="list" href="index.html">Home</a>
+          <a class="list" href="About.html">About</a>
+          <a class="list" href="Services.html">Services</a>
+          <a class="list" href="Contacts.html">Contacts</a>
         </div>
-        <div style="background-color: white; padding: 1.5em; margin-top: 20px; width: 430px; margin-right: auto; margin-left: auto; border-radius: 10px;">
+        <div class="content-box">
             <h2 style="color: black; text-align: center;">Who We Are</h2>
-            <p style="color: white;"></p>
-            <h2 style="color: black; text-align: center;">What We Can Do For You</h2>
-            <p style="color: white;"></p>
+            <p style="color: black; text-align: center;">JPM’s Team of Experts headed by our Principal Partners add the Value of their Experience to your Property</p>
+            <h2 style="text-align: center; font-size: 1.5rem;"><strong>Desalegne Abraham</strong></h2>
+            <p style="color: black; text-align: center;">
+<b>Senior Partner and driving force of JPM <br> Degrees in Business and Project Management <br> Formal qualifications in Real Estate and Property Management <br> Extensive international experience in Israel, Netherlands and Singapore <br> Guarantees highest levels of professionalism to benefit our clients</b>
+            </p>
+            <h2 style="font-size: 1.5rem; text-align: center;"><strong>Otfried Schellhas</strong></h2>
+            <p style="text-align: center">
+<b>German Educated <br>Business Management (Diploma) (SA) <br> Extensive Senior Management Experience, Director World Trade Center (SA), Caesar's Casino Complex (Joburg), UNECA Conference Centre (AA), GM 5-star Hotel (AA) <br> Certified Estate Agent (SA)</b>
+            </p>
+            <h2 style="color: black; text-align: center;">What You Gain</h2>
+            <p style="color: black; font-weight: bold; text-align: center;"> Hassle-Free Property <br>Facility Services <br>Tenancy Management <br>Commercial Consultancy <br>Property Agency </p>
             <h2 style="color: rgb(252, 124, 20); text-align: center;">Want To Know More?</h2>
-            <a style="text-decoration: none;" href="Contacts.html"><button id="call_to_act">CONTACT US NOW</button></a>
+            <button id="call_to_act" onclick="location.href='Contacts.html'">CONTACT US NOW</button>
         </div>
+    </div>
 </body>
 </html>
